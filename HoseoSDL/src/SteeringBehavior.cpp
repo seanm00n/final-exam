@@ -4,3 +4,9 @@
 SteeringBehavior::SteeringBehavior() {
 
 }
+void SteeringBehavior::Hide() {
+
+}
+void SteeringBehavior::GetHidePos() {
+
+}

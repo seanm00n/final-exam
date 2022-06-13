@@ -4,4 +4,6 @@
 class SteeringBehavior {
 public:
 	SteeringBehavior();
+	void Hide();
+	void GetHidePos();
 };

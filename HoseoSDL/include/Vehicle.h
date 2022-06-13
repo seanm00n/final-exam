@@ -2,6 +2,12 @@
 #include "Vector2D.h"
 #include "main.h"
 using namespace std;
+enum Speed
+{
+	slow = 3,
+	normal = 2,
+	fast = 1
+};
 class Vehicle {
 public:
 	Vector2D* m_acc;
@@ -13,8 +19,8 @@ public:
 	float m_maxSpeed;
 
 	Vehicle(float x, float y);
-	Vector2D Arrive(Vector2D* mouse, float num);
-	Vector2D Evade();
+	Vector2D Arrive(Vector2D* mouse);
+	Vector2D Rotate(float seta);
 	void addForce(Vector2D* force);
 	void Update();
 	void Draw(SDL_Renderer* renderer);
