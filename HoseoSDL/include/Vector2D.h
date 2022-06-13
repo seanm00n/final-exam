@@ -104,6 +104,10 @@ public:
             (*this) *= 1 / l;
         }
     }
+    Vector2D rotate(float seta) {
+        return Vector2D(this->getX() * cos(seta) - this->getY() * sin(seta),
+            this->getX() * sin(seta) + this->getY() * cos(seta));
+    }
 
 private:
     float m_x;
