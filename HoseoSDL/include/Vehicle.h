@@ -20,7 +20,7 @@ public:
 
 	Vehicle(float x, float y);
 	Vector2D Arrive(Vector2D* mouse);
-	Vector2D Rotate(float seta);
+	void Rotate(float seta);
 	void addForce(Vector2D* force);
 	void Update();
 	void Draw(SDL_Renderer* renderer);
